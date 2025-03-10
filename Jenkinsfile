@@ -15,6 +15,7 @@ pipeline{
     stage("Deploy")  {
       steps{
         echo "Deploy"
+        sh "cat invisible.cpp"
       }
     }
   }
@@ -24,3 +25,4 @@ pipeline{
     }
   }
 }
+
